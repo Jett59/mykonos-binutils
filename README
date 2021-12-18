@@ -45,3 +45,12 @@ GNU General Public License terms under which you can copy the files.
 
 REPORTING BUGS: Again, see gdb/README, binutils/README, etc., for info
 on where and how to report problems.
+
+## Mykonos Notes
+You should probably follow these steps for building binutils for compiling mykonos: (from the directory above this one)
+1. mkdir build-mykonos-binutils
+2. cd build-mykonos-binutils
+3. ../mykonos-binutils/configure --target=x86_64-elf --disable-nls --with-sysroots --prefix=$PREFIX
+4. make
+5. make install
+(Replacing x86_64 with the target architecture, and $PREFIX with the output directory, such as $HOME/opt/x86_64-elf)
